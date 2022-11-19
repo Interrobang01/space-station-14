@@ -1,0 +1,37 @@
+- type: entity
+  name: RCD
+  parent: BaseItem
+  id: RCD
+  description: An advanced construction device which can place/remove walls, floors, and airlocks quickly.
+  components:
+  - type: RCD
+  - type: UseDelay
+    delay: 1.0
+  - type: Sprite
+    sprite: Objects/Tools/rcd.rsi
+    state: icon
+  - type: Item
+    size: 20
+  - type: Clothing
+    sprite: Objects/Tools/rcd.rsi
+    quickEquip: false
+    slots:
+    - Belt
+  - type: StaticPrice
+    price: 100
+
+- type: entity
+  name: RCD Ammo
+  parent: BaseItem
+  id: RCDAmmo
+  description: Ammo cartridge for an RCD.
+  components:
+  - type: RCDAmmo
+  - type: Sprite
+    sprite: Objects/Tools/rcd.rsi
+    state: ammo
+  - type: Item
+    sprite: Objects/Tools/rcd.rsi
+    heldPrefix: ammo
+  - type: StaticPrice
+    price: 60
