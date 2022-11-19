@@ -5,8 +5,10 @@
   description: An advanced construction device which can place/remove walls, floors, and airlocks quickly.
   components:
   - type: RCD
+    delay: 1
+    maxAmmo: 60 ## Each ammo unit = 0.5 steel sheets
   - type: UseDelay
-    delay: 1.0
+    delay: 0.1
   - type: Sprite
     sprite: Objects/Tools/rcd.rsi
     state: icon
@@ -18,7 +20,7 @@
     slots:
     - Belt
   - type: StaticPrice
-    price: 100
+    price: 1000
 
 - type: entity
   name: RCD Ammo
@@ -27,6 +29,7 @@
   description: Ammo cartridge for an RCD.
   components:
   - type: RCDAmmo
+    refillAmmo: 30
   - type: Sprite
     sprite: Objects/Tools/rcd.rsi
     state: ammo
