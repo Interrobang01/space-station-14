@@ -120,6 +120,7 @@
   materials:
     Steel: 1000
     Plastic: 300
+    Gold: 10
 
 - type: latheRecipe
   id: RCDAmmo
@@ -129,8 +130,8 @@
   result: RCDAmmo
   completetime: 2.4
   materials:
-    Steel: 500
-    Plastic: 250
+    Steel: 1500
+    Plastic: 50
 
 - type: latheRecipe
   id: HandheldGPSBasic

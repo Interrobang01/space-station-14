@@ -20,7 +20,7 @@
     slots:
     - Belt
   - type: StaticPrice
-    price: 1000
+    price: 500
 
 - type: entity
   name: RCD Ammo
@@ -37,4 +37,4 @@
     sprite: Objects/Tools/rcd.rsi
     heldPrefix: ammo
   - type: StaticPrice
-    price: 60
+    price: 100
