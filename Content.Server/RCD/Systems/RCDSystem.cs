@@ -57,14 +57,6 @@ namespace Content.Server.RCD.Systems
             if (args.Handled || !args.CanReach)
                 return;
 
-            if (rcd.CancelToken != null)
-            {
-                rcd.CancelToken?.Cancel();
-                rcd.CancelToken = null;
-                args.Handled = true;
-                return;
-            }
-
             if (!args.ClickLocation.IsValid(EntityManager)) return;
 
             var clickLocationMod = args.ClickLocation;
