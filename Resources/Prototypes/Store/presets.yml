@@ -7,10 +7,14 @@
   - UplinkExplosives
   - UplinkMisc
   - UplinkBundles
+  - UplinkEspionage
   - UplinkTools
   - UplinkUtility
+  - UplinkImplants
   - UplinkJob
   - UplinkArmor
+  - UplinkChemistry
+  - UplinkSabotage
   - UplinkPointless
   currencyWhitelist:
   - Telecrystal

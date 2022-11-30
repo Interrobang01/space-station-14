@@ -42,6 +42,46 @@
   categories:
   - UplinkWeapons
 
+# Bundle Weapon
+- type: listing
+  id: UplinkC20RBundle
+  icon: /Textures/Objects/Weapons/Guns/SMGs/c20r.rsi/icon.png
+  productEntity: ClothingBackpackDuffelSyndicateFilledSMG
+  cost:
+    Telecrystal: 25
+  categories:
+  - UplinkWeapons
+
+# Bundle Weapon
+- type: listing
+  id: UplinkBulldogBundle
+  icon: /Textures/Objects/Weapons/Guns/Shotguns/bulldog.rsi/icon.png
+  productEntity: ClothingBackpackDuffelSyndicateFilledShotgun
+  cost:
+    Telecrystal: 25
+  categories:
+  - UplinkWeapons
+
+# Bundle Weapon
+- type: listing
+  id: UplinkGrenadeLauncherBundle
+  icon: /Textures/Objects/Weapons/Guns/Launchers/china_lake.rsi/icon.png
+  productEntity: ClothingBackpackDuffelSyndicateFilledGrenadeLauncher
+  cost:
+    Telecrystal: 30
+  categories:
+  - UplinkWeapons
+
+# Bundle Weapon
+- type: listing
+  id: UplinkL6SawBundle
+  icon: /Textures/Objects/Weapons/Guns/LMGs/l6.rsi/icon.png
+  productEntity: ClothingBackpackDuffelSyndicateFilledLMG
+  cost:
+    Telecrystal: 40
+  categories:
+  - UplinkWeapons
+
 - type: listing
   id: UplinkEsword
   name: Energy Sword
@@ -63,6 +103,15 @@
   - UplinkWeapons
 
 - type: listing
+  id: UplinkCyberpen
+  description: Cybersun's legal department pen. Smells vaguely of hard-light and war profiteering.
+  productEntity: CyberPen
+  cost:
+    Telecrystal: 4
+  categories:
+  - UplinkWeapons
+
+- type: listing
   id: UplinkFireAxeFlaming
   name: Fire Axe
   description: A classic-style weapon infused with advanced atmos technology to allow it to set targets on fire.
@@ -71,6 +120,45 @@
     Telecrystal: 10
   categories:
   - UplinkWeapons
+
+# Ammo
+
+- type: listing
+  id: UplinkPistol9mmMagazine
+  productEntity: MagazinePistol
+  cost:
+    Telecrystal: 2
+  categories:
+  - UplinkAmmo
+
+# For the Mandella
+- type: listing
+  id: UplinkMagazinePistolCaselessRifle
+  productEntity: MagazinePistolCaselessRifle
+  cost:
+    Telecrystal: 2
+  categories:
+  - UplinkAmmo
+
+# For the Inspector
+- type: listing
+  id: UplinkSpeedLoaderMagnum
+  icon: /Textures/Objects/Weapons/Guns/Ammunition/SpeedLoaders/Magnum/magnum_speed_loader.rsi/base.png
+  productEntity: SpeedLoaderMagnum
+  cost:
+    Telecrystal: 2
+  categories:
+  - UplinkAmmo
+
+# For the mosin
+- type: listing
+  id: UplinkMosinAmmo
+  description: A box of cartridges for the surplus rifle.
+  productEntity: BoxMagazineLightRifle
+  cost:
+    Telecrystal: 2
+  categories:
+  - UplinkAmmo
 
 # Explosives
 
@@ -131,45 +219,6 @@
   categories:
   - UplinkExplosives
 
-# Ammo
-
-- type: listing
-  id: UplinkPistol9mmMagazine
-  productEntity: MagazinePistol
-  cost:
-    Telecrystal: 2
-  categories:
-  - UplinkAmmo
-
-# For the Mandella
-- type: listing
-  id: UplinkMagazinePistolCaselessRifle
-  productEntity: MagazinePistolCaselessRifle
-  cost:
-    Telecrystal: 2
-  categories:
-  - UplinkAmmo
-
-# For the Inspector
-- type: listing
-  id: UplinkSpeedLoaderMagnum
-  icon: /Textures/Objects/Weapons/Guns/Ammunition/SpeedLoaders/Magnum/magnum_speed_loader.rsi/base.png
-  productEntity: SpeedLoaderMagnum
-  cost:
-    Telecrystal: 2
-  categories:
-  - UplinkAmmo
-
-# For the mosin
-- type: listing
-  id: UplinkMosinAmmo
-  description: A box of cartridges for the surplus rifle.
-  productEntity: BoxMagazineLightRifle
-  cost:
-    Telecrystal: 2
-  categories:
-  - UplinkAmmo
-
 #Utility
 
 - type: listing
@@ -199,26 +248,6 @@
   - UplinkUtility
 
 - type: listing
-  id: UplinkEmag
-  name: Emag
-  description: The business card of the syndicate, this sequencer is able to break open airlocks and tamper with a variety of station devices. Recharges automatically.
-  productEntity: Emag
-  cost:
-    Telecrystal: 8
-  categories:
-  - UplinkUtility
-
-- type: listing
-  id: UplinkAgentIDCard
-  name: Agent ID Card
-  description: A modified ID card that can copy accesses from other cards and change its name and job title at-will.
-  productEntity: AgentIDCard
-  cost:
-    Telecrystal: 3
-  categories:
-  - UplinkUtility
-
-- type: listing
   id: UplinkJetpack
   name: Black Jetpack
   description: A black jetpack. It allows you to fly around in space. Additional fuel not included.
@@ -240,47 +269,14 @@
   - UplinkUtility
 
 - type: listing
-  id: UplinkStealthBox
-  name: Stealth Box
-  description: A box outfitted with stealth technology, sneak around with this and don't move too fast now!
-  productEntity: StealthBox
+  id: UplinkCarpDehydrated
+  productEntity: DehydratedSpaceCarp
   cost:
-    Telecrystal: 10
-  categories:
-    - UplinkUtility
-
-#TODO: Increase the price of this to 4-5/remove it when we get encrpytion keys
-- type: listing
-  id: UplinkHeadset
-  name: Syndicate Over-ear Headset
-  description: A headset that allows you to listen in on departmental channels, or contact other traitors.
-  productEntity: ClothingHeadsetAltSyndicate
-  cost:
-    Telecrystal: 2
+    Telecrystal: 3
   categories:
   - UplinkUtility
 
-- type: listing
-  id: UplinkHypopen
-  name: Hypopen
-  description: A chemical hypospray disguised as a pen, capable of instantly injecting up to 15u of reagents. Starts empty.
-  productEntity: Hypopen
-  cost:
-    Telecrystal: 4
-  categories:
-  - UplinkUtility
-
-- type: listing
-  id: UplinkVoiceMask
-  name: Voice Mask
-  description: A gas mask that lets you adjust your voice to whoever you can think of.
-  productEntity: ClothingMaskGasVoiceMasker
-  cost:
-    Telecrystal: 5
-  categories:
-  - UplinkUtility
-
-# Utility-Implants
+# Implants
 
 - type: listing
   id: UplinkStorageImplanter
@@ -291,7 +287,7 @@
   cost:
     Telecrystal: 12
   categories:
-    - UplinkUtility
+    - UplinkImplants
   conditions:
     - !type:StoreWhitelistCondition
       blacklist:
@@ -307,7 +303,7 @@
   cost:
     Telecrystal: 10
   categories:
-    - UplinkUtility
+    - UplinkImplants
   conditions:
     - !type:StoreWhitelistCondition
       blacklist:
@@ -323,7 +319,7 @@
   cost:
     Telecrystal: 25
   categories:
-    - UplinkUtility
+    - UplinkImplants
   conditions:
     - !type:StoreWhitelistCondition
       whitelist:
@@ -335,42 +331,6 @@
           - SurplusBundle
 
 # Bundles
-
-- type: listing
-  id: UplinkC20RBundle
-  icon: /Textures/Objects/Weapons/Guns/SMGs/c20r.rsi/icon.png
-  productEntity: ClothingBackpackDuffelSyndicateFilledSMG
-  cost:
-    Telecrystal: 25
-  categories:
-  - UplinkBundles
-
-- type: listing
-  id: UplinkBulldogBundle
-  icon: /Textures/Objects/Weapons/Guns/Shotguns/bulldog.rsi/icon.png
-  productEntity: ClothingBackpackDuffelSyndicateFilledShotgun
-  cost:
-    Telecrystal: 25
-  categories:
-  - UplinkBundles
-
-- type: listing
-  id: UplinkGrenadeLauncherBundle
-  icon: /Textures/Objects/Weapons/Guns/Launchers/china_lake.rsi/icon.png
-  productEntity: ClothingBackpackDuffelSyndicateFilledGrenadeLauncher
-  cost:
-    Telecrystal: 30
-  categories:
-  - UplinkBundles
-
-- type: listing
-  id: UplinkL6SawBundle
-  icon: /Textures/Objects/Weapons/Guns/LMGs/l6.rsi/icon.png
-  productEntity: ClothingBackpackDuffelSyndicateFilledLMG
-  cost:
-    Telecrystal: 40
-  categories:
-  - UplinkBundles
 
 - type: listing
   id: UplinkZombieBundle
@@ -426,6 +386,60 @@
       components:
       - SurplusBundle
 
+# Espionage
+
+- type: listing
+  id: UplinkVoiceMask
+  name: Voice Mask
+  description: A gas mask that lets you adjust your voice to whoever you can think of.
+  productEntity: ClothingMaskGasVoiceMasker
+  cost:
+    Telecrystal: 5
+  categories:
+  - UplinkEspionage
+
+#TODO: Increase the price of this to 4-5/remove it when we get encrpytion keys
+- type: listing
+  id: UplinkHeadset
+  name: Syndicate Over-ear Headset
+  description: A headset that allows you to listen in on departmental channels, or contact other traitors.
+  productEntity: ClothingHeadsetAltSyndicate
+  cost:
+    Telecrystal: 2
+  categories:
+  - UplinkEspionage
+
+- type: listing
+  id: UplinkStealthBox
+  name: Stealth Box
+  description: A box outfitted with stealth technology, sneak around with this and don't move too fast now!
+  productEntity: StealthBox
+  cost:
+    Telecrystal: 10
+  categories:
+    - UplinkEspionage
+
+- type: listing
+  id: UplinkAgentIDCard
+  name: Agent ID Card
+  description: A modified ID card that can copy accesses from other cards and change its name and job title at-will.
+  productEntity: AgentIDCard
+  cost:
+    Telecrystal: 3
+  categories:
+  - UplinkEspionage
+
+- type: listing
+  id: UplinkChameleon
+  name: Chameleon Kit
+  description: A backpack full of items that contain chameleon technology allowing you to disguise as pretty much anything on the station, and more!
+  productEntity: ClothingBackpackChameleonFill
+  icon: /Textures/Clothing/Uniforms/Jumpsuit/rainbow.rsi/icon.png
+  cost:
+    Telecrystal: 4
+  categories:
+    - UplinkEspionage
+
 # Tools
 
 - type: listing
@@ -451,22 +465,6 @@
   productEntity: ClothingBackpackDuffelSyndicateFilledMedical
   cost:
     Telecrystal: 5
-  categories:
-  - UplinkTools
-
-- type: listing
-  id: UplinkPowerSink
-  productEntity: PowerSink
-  cost:
-    Telecrystal: 5
-  categories:
-  - UplinkTools
-
-- type: listing
-  id: UplinkCarpDehydrated
-  productEntity: DehydratedSpaceCarp
-  cost:
-    Telecrystal: 3
   categories:
   - UplinkTools
 
@@ -503,17 +501,6 @@
       - SurplusBundle
 
 # Armor
-
-- type: listing
-  id: UplinkChameleon
-  name: Chameleon Kit
-  description: A backpack full of items that contain chameleon technology allowing you to disguise as pretty much anything on the station, and more!
-  productEntity: ClothingBackpackChameleonFill
-  icon: /Textures/Clothing/Uniforms/Jumpsuit/rainbow.rsi/icon.png
-  cost:
-    Telecrystal: 4
-  categories:
-    - UplinkArmor
 
 - type: listing
   id: UplinkClothingNoSlipsShoes
@@ -579,16 +566,56 @@
   categories:
   - UplinkArmor
 
-# Misc
+# Chemistry
 
 - type: listing
-  id: UplinkCyberpen
-  description: Cybersun's legal department pen. Smells vaguely of hard-light and war profiteering.
-  productEntity: CyberPen
+  id: UplinkCigarettes
+  productEntity: CigPackSyndicate
+  cost:
+    Telecrystal: 2
+  categories:
+  - UplinkChemistry
+
+- type: listing
+  id: UplinkNocturineChemistryBottle
+  description: A chemical that makes it very hard for your target to stand up.
+  productEntity: NocturineChemistryBottle
+  cost:
+    Telecrystal: 5
+  categories:
+  - UplinkChemistry
+
+- type: listing
+  id: UplinkHypopen
+  name: Hypopen
+  description: A chemical hypospray disguised as a pen, capable of instantly injecting up to 15u of reagents. Starts empty.
+  productEntity: Hypopen
   cost:
     Telecrystal: 4
   categories:
-  - UplinkMisc
+  - UplinkChemistry
+
+# Sabotage
+
+- type: listing
+  id: UplinkPowerSink
+  productEntity: PowerSink
+  cost:
+    Telecrystal: 5
+  categories:
+  - UplinkSabotage
+
+- type: listing
+  id: UplinkEmag
+  name: Emag
+  description: The business card of the syndicate, this sequencer is able to break open airlocks and tamper with a variety of station devices. Recharges automatically.
+  productEntity: Emag
+  cost:
+    Telecrystal: 8
+  categories:
+  - UplinkSabotage
+
+# Misc
 
 - type: listing
   id: UplinkDecoyDisk
@@ -597,14 +624,6 @@
   productEntity: NukeDiskFake
   cost:
     Telecrystal: 1
-  categories:
-  - UplinkMisc
-
-- type: listing
-  id: UplinkCigarettes
-  productEntity: CigPackSyndicate
-  cost:
-    Telecrystal: 2
   categories:
   - UplinkMisc
 
@@ -641,15 +660,6 @@
 #     Telecrystal: 5
 #   categories:
 #   - UplinkMisc
-
-- type: listing
-  id: UplinkNocturineChemistryBottle
-  description: A chemical that makes it very hard for your target to stand up.
-  productEntity: NocturineChemistryBottle
-  cost:
-    Telecrystal: 5
-  categories:
-  - UplinkMisc
 
 - type: listing
   id: UplinkSyndicateSegwayCrate
