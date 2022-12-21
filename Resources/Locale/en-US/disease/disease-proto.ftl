@@ -15,6 +15,7 @@ disease-proto-bleeders = Bleeder's Bite
 disease-proto-plague = plague
 disease-proto-owonavirus = OwOnavirus
 disease-proto-tongue-twister = Tongue Twister
+disease-proto-mortification = Mortification
 
 # Zombie
 disease-proto-zombie = Zombie Virus

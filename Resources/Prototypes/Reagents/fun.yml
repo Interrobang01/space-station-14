@@ -158,3 +158,23 @@
       effects:
       - !type:Electrocute
         probability: 0.5
+
+- type: reagent
+  id: Mortizine
+  name: reagent-name-mortizine
+  group: Special
+  desc: reagent-desc-mortizine
+  physicalDesc: reagent-physical-desc-morty
+  flavor: mort
+  color: "#FFD35D"
+  tileReactions:
+  - !type:CreateEntityTileReaction
+    entity: MobPossumMorty
+    usage: 1
+    randomOffsetMax: 0.3
+  metabolisms:
+    Poison:
+      effects:
+      - !type:ChemCauseDisease
+        disease: Mortification
+        causeChance: 1

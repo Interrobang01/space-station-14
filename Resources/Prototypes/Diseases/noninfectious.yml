@@ -68,3 +68,13 @@
 
 
 ### Once radiation is refactored I want it to have a small chance of giving you regular cancer
+
+- type: disease
+  id: Mortification
+  name: disease-proto-mortification
+  cureResist: 0.1
+  effects:
+    - !type:DiseasePolymorph
+      probability: 1 ## instant
+      polymorphId: Morty
+      polymorphMessage: disease-polymorph

@@ -74,3 +74,12 @@
   transferName: true
   revertOnCrit: false
   revertOnDeath: false
+
+- type: polymorph
+  id: Morty
+  entity: MobPossumMorty
+  forced: true
+  inventory: Transfer
+  transferName: true
+  revertOnCrit: false
+  revertOnDeath: false
