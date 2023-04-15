@@ -332,6 +332,44 @@
         type: Add
         time: 5
         refresh: false
+      - !type:GenericStatusEffect
+        conditions:
+        - !type:ReagentThreshold
+          reagent: SpaceDrugs
+          min: 30
+        key: SeeingRainbows
+        component: SeeingRainbows
+        type: Add
+        time: 15 # The trip will never end; don't overdose!
+        refresh: false
+      - !type:GenericStatusEffect
+        conditions:
+        - !type:ReagentThreshold
+          reagent: SpaceDrugs
+          min: 30
+        key: TemporaryBlindness # A bit of vision loss
+        component: TemporaryBlindness
+        type: Add
+        time: 4
+        probability: 0.1
+      - !type:PopupMessage
+        type: Local
+        messages:
+        - generic-reagent-effect-burning-eyes-a-bit
+        - generic-reagent-effect-tearing-up
+        - generic-reagent-effect-nauseous
+        conditions:
+        - !type:ReagentThreshold # A bit of a warning before the actual overdose kicks in
+          reagent: SpaceDrugs
+          min: 25
+        probability: 0.08
+      - !type:MovespeedModifier
+        conditions:
+        - !type:ReagentThreshold # A bit of a warning before the actual overdose kicks in
+          reagent: SpaceDrugs
+          min: 25
+        walkSpeedModifier: 0.7
+        sprintSpeedModifier: 0.7
 
 # Probably replace this one with sleeping chem when putting someone in a comatose state is easier
 - type: reagent
